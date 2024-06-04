@@ -1,0 +1,14 @@
+<h1 (click)="borrarNumero()">Numero: {{numero}}</h1>
+
+<div>
+    <input type="text" placeholder="Ingrese el número" [(ngModel)]="numero" (input)="numerosCapicua()"><!--la viable que coloque despues del = va entrar en la propiedad-->
+    <button (click)="borrarNumero()">Eliminar número</button>
+</div>
+
+@if (esCapicua === true ) {
+    <h1>El numero es capicua</h1>
+}@else {
+    <h1>El numero no es capicua</h1>
+}
+
+
